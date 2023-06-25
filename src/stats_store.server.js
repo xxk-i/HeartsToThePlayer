@@ -1,10 +1,12 @@
 import { writable } from 'svelte/store';
 import fs from "fs";
+import path from "path"
 
 export const stats = writable([]);
 export const latest = writable("");
 
-const DB_DIR = 'K:/Minecraft/HardcoreHIH2023/Development/hardercore-api/db/worlds';
+// const DB_DIR = 'K:/Minecraft/HardcoreHIH2023/Development/hardercore-api/db/worlds';
+const DB_DIR = './sample/db/worlds';
 
 export async function refresh_store() {
     console.log("Refreshing stats store...");
