@@ -26,16 +26,23 @@
         {#await data}
             <p> Fetching stats </p>
         {:then result}
-            <p>{JSON.stringify(result.worlds[selected])}</p>
+            <p>{JSON.stringify(result.worlds[selected - 1])}</p>
             <table>
                 <caption>Player Stats</caption>
                 <body>
-                    {#each result.worlds[selected] as player}
+                    {#each result.worlds[selected - 1] as player}
                         {#each Object.keys(player) as stat}
-                            <tr>
-                                <td>{stats_en[stat]}</td>
-                                <td>{player[stat]}</td>
-                            </tr>
+                            {#if stat === "skinUrl"}
+                                <tr>
+                                    <td>{stats_en[stat]}</td>
+                                    <td><img src={player[stat]} alt={player["displayName"]}></td>
+                                </tr>
+                            {:else}
+                                <tr>
+                                    <td>{stats_en[stat]}</td>
+                                    <td>{player[stat]}</td>
+                                </tr>
+                            {/if}
                         {/each}
                     {/each}
                 </body>
