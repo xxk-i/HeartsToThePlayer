@@ -30,7 +30,9 @@
             <table>
                 <caption>Player Stats</caption>
                 <body>
+                    <!-- for each world -->
                     {#each result.worlds[selected - 1] as player}
+                        <!-- for each player  -->
                         {#each Object.keys(player) as stat}
                             {#if stat === "skinUrl"}
                                 <tr>

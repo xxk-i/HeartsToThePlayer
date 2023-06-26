@@ -18,7 +18,13 @@ export async function refresh_store() {
         let current = "";
 
         world_directories.forEach(function (directory, _index) {
+            // fuck you macos
+            if (directory === ".DS_Store") {
+                return;
+            }
+
             current = directory
+                
             // @ts-ignore
             // items[directory]
             let players = []
