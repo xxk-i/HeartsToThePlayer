@@ -30,22 +30,22 @@
             <table>
                 <caption>Player Stats</caption>
                 <body>
+                    <!-- generate table headers -->
+                    {#each Object.keys(stats_en) as key}
+                        <th>{stats_en[key]}</th>
+                    {/each}
                     <!-- for each world -->
                     {#each result.worlds[selected - 1] as player}
                         <!-- for each player  -->
-                        {#each Object.keys(player) as stat}
-                            {#if stat === "skinUrl"}
-                                <tr>
-                                    <td>{stats_en[stat]}</td>
-                                    <td><img src={player[stat]} alt={player["displayName"]}></td>
-                                </tr>
-                            {:else}
-                                <tr>
-                                    <td>{stats_en[stat]}</td>
-                                    <td>{player[stat]}</td>
-                                </tr>
-                            {/if}
-                        {/each}
+                        <tr>
+                            {#each Object.keys(player) as stat}
+                                {#if stat === "skinUrl"}
+                                        <td><img src={player[stat]} alt={player["displayName"]}></td>
+                                {:else}
+                                        <td>{player[stat]}</td>
+                                {/if}
+                            {/each}
+                        </tr>
                     {/each}
                 </body>
             </table>
