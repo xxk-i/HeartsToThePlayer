@@ -1,5 +1,97 @@
-td, th {
+/* td, th {
     border: 1px solid #924242;
     padding: 0.5rem;
+    text-align: center;
+} */
+
+.header {
+    margin-top: 2em;
+}
+
+.headerLeft {
+    float: left;
+    width: 5em;
+}
+
+.headerLeft img {
+    image-rendering: pixelated;
+    width: 100%;
+    height: 100%;
+}
+
+.headerCenter {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.sidebar {
+    float: left;
+    width: 18em;
+    height: auto;
+    font-size: large;
+}
+
+.sidebar table {
+    border-collapse: collapse;
+    border-style: hidden;
+    border-right: 1px solid white;
+}
+
+.sidebar td {
+    border-collapse: collapse;
+    border: 1px solid white;
+    padding: 5px;
+    width: auto;
+}
+
+.stats {
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.stats table {
+    text-align: center;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+.stats th {
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    border-collapse: collapse;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 2em;
+}
+
+.stats tr {
+    width: auto;
+    border-collapse: collapse;
+    height: auto;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.stats td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.main {
+    margin-top: 3em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
 }
