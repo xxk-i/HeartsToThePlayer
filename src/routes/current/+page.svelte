@@ -1,5 +1,6 @@
 <script>
     import '../../global.css'
+    import './styles.css'
 	import { stats_en } from '../../stats_en.js';
 
     // +page.server.js
