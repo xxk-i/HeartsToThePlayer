@@ -11,6 +11,7 @@
         <img alt='Logo' src={logo}/>
     </header>
     <div class='sidebar'>
+        <h1>Links</h1>
         <Sidebar side="left">
             <ul slot="content">
                 <li><a href="/">Home</a></li>

@@ -4,11 +4,17 @@
 </script>
 
 <div class='inner-nav'>
-    <h1 style="text-wrap: nowrap;">In this page</h1>
+    <h1>In this page</h1>
     <Sidebar side="right">
         <ul slot="content">
             <li>
                 <a href="#root">/</a>
+            </li>
+            <li>
+                <a href="#uptime">/world/uptime</a>
+            </li>
+            <li>
+                <a href="#current">/world/current</a>
             </li>
             <li>
                 <a href="#all-stats">/world/stats</a>
@@ -27,6 +33,24 @@
         <div class="code-container">
             <code>
                 "You have reached the homepage of hardcore-api"
+            </code>
+        </div>
+    </li>
+    <li class="api-item">
+        <h1 id="current">GET /world/current</h1>
+        <h4 style="color: slategray;"><i>Returns the current world number (attempt number)</i></h4>
+        <div class="code-container">
+            <code>
+                4
+            </code>
+        </div>
+    </li>
+    <li class="api-item">
+        <h1 id="uptime">GET /world/current</h1>
+        <h4 style="color: slategray;"><i>Returns the current world uptime (miliseconds)</i></h4>
+        <div class="code-container">
+            <code>
+                12588758
             </code>
         </div>
     </li>
@@ -60,7 +84,7 @@
     </li>
     <li class="api-item">
         <h1 id="root">GET /world/stats/{`<uuid>`}</h1>
-        <h4 style="color: slategray;"><i>Get stats for a current player by Mojang UUID</i></h4>
+        <h4 style="color: slategray;"><i>Returns stats for a current player by Mojang UUID</i></h4>
         <div class="code-container">
 <pre>{`{
     "displayName": "xxk_",
@@ -83,6 +107,7 @@
     }
 
     .inner-nav {
+        text-wrap: nowrap;
         grid-area: inner-nav;
         padding-right: 1rem;
         position: sticky;
