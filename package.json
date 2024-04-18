@@ -15,6 +15,7 @@
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/adapter-node": "^1.2.4",
 		"@sveltejs/kit": "^1.20.1",
+		"@vitejs/plugin-basic-ssl": "^1.0.1",
 		"eslint": "^8.41.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-svelte": "^2.30.0",

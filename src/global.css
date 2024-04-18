@@ -1,5 +1,7 @@
 body {
     color: white;
     background-color: rgb(46, 45, 45);
-    font-family: 'Verdana'
+    font-family: 'Verdana';
+    height: 100%;
+    margin: 0;
 }

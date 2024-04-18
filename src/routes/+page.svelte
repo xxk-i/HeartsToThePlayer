@@ -1,23 +1,21 @@
 <script>
-    import './../global.css'
-    import './styles.css'
-
-    import logo from '$assets/logo.png';
 </script>
 
-<body>
-    <div class='center'>
-        <img alt='Logo' src={logo}/>
-        <h1>COMING THIS SUMMER</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JMe1-xc97zY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-</body>
+<div class='container'>
+    <h1>COMING THIS WINTER</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JMe1-xc97zY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
+<div class="empty">
+</div>
 
-<footer>
-    <h6>
-        hardercoremc.net 2023
-        <br>written in svelte &#139;3
-    </h6>
+<style>
+    .container {
+        text-align: center;
+        grid-area: content; 
+    }
 
-</footer>
+    .empty {
+        grid-area: inner-nav;
+    }
+</style>
