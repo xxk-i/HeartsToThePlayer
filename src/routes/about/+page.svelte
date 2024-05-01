@@ -1,5 +1,19 @@
 <div class="content">
-    <h1>This was created in 2023 for the gamers</h1>
+    <h2>Source Code</h2>
+    <ul>
+        <li>
+            <a href="https://github.com/xxk-i/HeartInHearts">https://github.com/xxk-i/HeartInHearts</a>
+        </li>
+        <li>
+            <a href="https://github.com/xxk-i/harderstats">https://github.com/xxk-i/harderstats</a>
+        </li>
+        <li>
+            <a href="https://github.com/xxk-i/hardercore-api">https://github.com/xxk-i/hardercore-api</a>
+        </li>
+        <li>
+            <a href="https://github.com/xxk-i/HeartsToThePlayer">https://github.com/xxk-i/HeartsToThePlayer</a>
+        </li>
+    </ul>
 </div>
 
 <style>
